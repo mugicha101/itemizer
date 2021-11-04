@@ -1,0 +1,214 @@
+/* feel free to go on google fonts and change this to another font! */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap");
+/* @import "../node_modules/react-bulma-components/lib/index.sass"; */
+
+/* buttons */
+[type="button"],
+[type="submit"],
+button,
+.a-button,
+.yellow-button,
+.transp-button,
+.green-button {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1rem;
+  /* if you change the font, don't forget to change it here too! */
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0rem 0rem;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  line-height: 1;
+  border-radius: 10px;
+  margin-bottom: 3%;
+  margin-top: 10px;
+}
+
+[type="li"],
+li {
+  display: inline-block;
+}
+
+button.small {
+  background-color:rgb(255, 255, 255);
+  width: 50px;
+  height: 20px;
+  font-size: 10px;
+  padding: 0rem 0rem;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  font-weight: 800;
+  box-shadow: inset 0 3px 6px rgba(14, 0, 100, 0.5), 0 2px 6px rgba(33, 0, 85, 0.45);
+  transition: 0.15s;
+}
+
+button.small:hover {
+  width: 80px;
+  height: 30px;
+  font-size: 15px;
+}
+
+button.remove:hover {
+  background-color: rgb(255, 128, 128);
+}
+
+button.rename:hover {
+  background-color:rgb(255, 255, 128);
+}
+
+Button.add_task {
+  background-color: rgb(0, 132, 255);
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  border-width: 3px;
+  font-weight: 1000;
+  font-size: 25px;
+  margin-top: 15px;
+  box-shadow: inset 0 10px 20px rgba(14, 0, 100, 0.5), 0 4px 6px rgba(33, 0, 85, 0.45);
+  transition: 0.15s;
+}
+button.add_task:hover {
+  background-color: rgb(71, 181, 255);
+  width: 230px;
+}
+
+/* == HTML == */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+html {
+  box-sizing: border-box;
+  /* if you change the font, don't forget to change it here too! */
+  font-family: "Source Sans Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.4;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 18px;
+  background-color: black;
+}
+
+[type=div],
+div {
+  margin-bottom: 1rem;
+}
+div.label {
+  background-color: rgb(0, 255, 255);
+  border-color:rgb(0, 0, 0);
+  border-radius: 10px;
+  border-width: 3px;
+  font-size: 20px;
+  padding-left: 10px;
+  font-weight: 1000;
+  box-shadow: inset 0 3px 6px rgba(4, 0, 255, 0.507), 0 4px 6px rgba(33, 0, 85, 0.45);
+}
+div.title {
+  color: rgb(0, 64, 128);
+  position: relative;
+  top: 10px;
+  width: fit-content;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 5px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: inset 0 3px 6px rgb(0, 217, 255);
+  border-radius: 10px;
+}
+
+/* body */
+
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+  border-radius: 50px;
+  background-color: rgb(200, 255, 255) !important;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.8)
+}
+
+/* Anchors */
+a {
+  border-bottom: 3px solid #beebaa44;
+  color: #5a7913;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #beebaa44;
+}
+
+/* paragraph */
+/* == HEADERS == */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #00509b6e;
+  margin-top: 2rem;
+}
+
+h1 {
+  color: #02005e;
+  font-size: 2.6rem;
+  font-weight: 1000 !important;
+  margin: 1rem 1rem 1rem 0;
+}
+
+/**/
+.wrapper,
+.container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 0 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transition: all 0.3s ease;
+}
+
+.container::before,
+.container::after,
+.wrapper::before,
+.wrapper::after {
+  display: table;
+  content: "";
+  clear: both;
+  width: 100%;
+}
+
+.main {
+  margin: 2rem;
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  height: 200px;
+  height: 2.5rem;
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+hr {
+  border: 1px solid black;
+}
