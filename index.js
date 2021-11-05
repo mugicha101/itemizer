@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 
-import { Header, Footer } from "./components";
-import App from "./App";
+import { Header, Footer } from "./src/components";
+import App from "./src/App";
 
 import "./index.css";
 import "bootstrap/dist/css/bootstrap.min.css";
